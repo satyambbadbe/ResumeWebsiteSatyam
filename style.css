@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    color: #343A40;
+    line-height: 1.7;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #14213D;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    color: #D4A373;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D4A373;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #14213D;
+    color: white;
+    padding: 60px 10%;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.intro {
+    color: #D4A373;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #D4A373;
+}
+
+.hero h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.intro) {
+    color: #D8DEE9;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #D4A373;
+    color: #14213D;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* Common Sections */
+.section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #14213D;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.alternate {
+    background-color: #EEF1F5;
+}
+
+/* About Section */
+.about-text {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Cards and Education */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 10px;
+    border-bottom: 4px solid #D4A373;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #14213D;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.card span {
+    color: #B17A43;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Experience Section */
+.experience-item {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background-color: white;
+    border-left: 4px solid #D4A373;
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.experience-item h3 {
+    color: #14213D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.organization {
+    color: #B17A43;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Achievements */
+.achievement-list {
+    max-width: 850px;
+    margin: auto;
+    padding-left: 25px;
+}
+
+.achievement-list li {
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #14213D;
+    text-align: center;
+    color: white;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact a {
+    color: #D4A373;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0D172B;
+    color: #D8DEE9;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h3 {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+}
